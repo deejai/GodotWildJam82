@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://vvcbtlxtg1ws"]
+
+[ext_resource type="Script" uid="uid://cdoqqdadq5xti" path="res://Scenes/Entities/Player/player.gd" id="1_qer5h"]
+[ext_resource type="Texture2D" uid="uid://om54oia7lpgt" path="res://Assets/Sprites/Test/car.png" id="2_pmdnf"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_akw4a"]
+radius = 8.0
+height = 32.0
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_qer5h")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+scale = Vector2(0.044921875, 0.044921875)
+texture = ExtResource("2_pmdnf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CapsuleShape2D_akw4a")

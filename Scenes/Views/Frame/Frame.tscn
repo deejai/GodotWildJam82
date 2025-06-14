@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://8goolnjb0488"]
+
+[ext_resource type="Texture2D" uid="uid://bqnrea2vc5wut" path="res://Assets/Sprites/Test/frame.png" id="1_eudwj"]
+
+[node name="Frame" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Control"]
+
+[node name="Node2D" type="Node2D" parent="Control/CanvasLayer"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/CanvasLayer"]
+position = Vector2(576, 324)
+scale = Vector2(8.999999, 10.285714)
+texture = ExtResource("1_eudwj")
